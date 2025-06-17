@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="24dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مواد اولیه مورد نظر را انتخاب کنید:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkboxMeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="گوشت"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxOnion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="پیاز"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxTomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رب"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxPepper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فلفل"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مرغ"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxCheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="پنیر"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+
+        <CheckBox
+            android:id="@+id/checkboxEgge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تخم مرغ"
+            android:textColor="@color/black"
+            android:buttonTint="@color/bg_widget"
+            android:gravity="right|center_vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نمایش غذاهای مرتبط"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_widget" />
+
+    <!-- RecyclerView برای نمایش غذاهای فیلتر شده -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_foods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

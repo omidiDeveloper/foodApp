@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/home"
+        android:title="خانه" />
+
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/search"
+        android:title="جستجو" />
+
+    <item
+        android:id="@+id/bottom_filter"
+        android:icon="@drawable/discovery"
+        android:title="پخت وپز" />
+    <item
+        android:id="@+id/bottom_person"
+        android:icon="@drawable/bookmark"
+        android:title="شخضی" />
+</menu>
